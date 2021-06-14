@@ -6,7 +6,7 @@
 		      :data="tableData"
 		      style="width: 100%">
 		      <el-table-column
-		        prop="user_name"
+		        prop="username"
 		        label="姓名"
 		        width="180">
 		      </el-table-column>
@@ -89,7 +89,7 @@
                     	res.data.forEach(item => {
                     		const tableItem = {
                     			create_time: item.create_time,
-						        user_name: item.user_name,
+						        username: item.username,
 						        admin: item.admin,
                                 city: item.city,
                     		}

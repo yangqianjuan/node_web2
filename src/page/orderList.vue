@@ -12,7 +12,7 @@
 			      <template slot-scope="props">
 			        <el-form label-position="left" inline class="demo-table-expand">
 			          <el-form-item label="用户名" >
-			            <span>{{ props.row.user_name }}</span>
+			            <span>{{ props.row.username }}</span>
 			          </el-form-item>
 			          <el-form-item label="店铺名称">
 			            <span>{{ props.row.restaurant_name }}</span>
@@ -125,7 +125,7 @@
 	            	const userInfo = await getUserInfo(row.user_id);
 	            	const addressInfo = await getAddressById(row.address_id);
 
-	                this.tableData.splice(row.index, 1, {...row, ...{restaurant_name: restaurant.name, restaurant_address: restaurant.address, address: addressInfo.address, user_name: userInfo.username}});
+	                this.tableData.splice(row.index, 1, {...row, ...{restaurant_name: restaurant.name, restaurant_address: restaurant.address, address: addressInfo.address, username: userInfo.username}});
                     this.$nextTick(() => {
                         this.expendRow.push(row.index);
                     })

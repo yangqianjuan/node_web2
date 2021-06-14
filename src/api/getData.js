@@ -4,19 +4,19 @@ import fetch from '@/config/fetch'
  * 登陆
  */
 
-export const login = data => fetch('/admin/login', data, 'POST');
+export const login = data => fetch('/user/login', data, 'POST');
 
 /**
  * 退出
  */
 
-export const signout = () => fetch('/admin/signout');
+export const signout = () => fetch('/user/signout');
 
 /**
  * 获取用户信息
  */
 
-export const getAdminInfo = () => fetch('/admin/info');
+export const getAdminInfo = () => fetch('/user/info');
 
 /**
  * api请求量
@@ -54,19 +54,19 @@ export const orderCount = date => fetch('/statis/order/' + date + '/count');
  * 某一天管理员注册量
  */
 
-export const adminDayCount = date => fetch('/statis/admin/' + date + '/count');
+export const adminDayCount = date => fetch('/statis/user/' + date + '/count');
 
 /**
  * 管理员列表
  */
 
-export const adminList = data => fetch('/admin/all', data);
+export const adminList = data => fetch('/user/all', data);
 
 /**
  * 管理员数量
  */
 
-export const adminCount = () => fetch('/admin/count');
+export const adminCount = () => fetch('/user/count');
 
 /**
  * 获取定位城市

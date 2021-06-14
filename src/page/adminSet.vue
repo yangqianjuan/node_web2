@@ -5,7 +5,7 @@
         <div class="admin_set">
             <ul>
                 <li>
-                    <span>姓名：</span><span>{{adminInfo.user_name}}</span>
+                    <span>姓名：</span><span>{{adminInfo.username}}</span>
                 </li>
                 <li>
                     <span>注册时间：</span><span>{{adminInfo.create_time}}</span>
@@ -27,7 +27,7 @@
                       <img v-if="adminInfo.avatar" :src="baseImgPath + adminInfo.avatar" class="avatar">
                       <i v-else class="el-icon-plus avatar-uploader-icon"></i>
                     </el-upload>
-                </li>    
+                </li>
             </ul>
         </div>
     </div>
